@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    
+    <div class="navbar">
+  <img src="logo.png" id="logo">
+  
+  <a href="index.php">Welcome <?php echo $_SESSION['username']?>!</a>
+  <a href="index.php">Home</a>
+  <a href="aboutus.php">About Us</a>
+  <div class="dropdown">
+    <button class="dropbtn">Find Answers
+ 
+    </button>
+    <div class="dropdown-content">
+      <a href="cooking.php">Cooking</a>
+      <a href="finance.php">Finance</a>
+      <a href="tech.php">Technology</a>
+      <a href="education.php">Education</a>
+      
+    </div>
+  </div>
+  <a href="logout.php">Logout</a> 
+  <form method="POST" action="search.php" class="searchdb">
+			<input type="text" name="q" placeholder="query">
+			<input type="submit" name="search" value="Search">
+		</form>
+</div>
+<br>
+  
+<div class="search-bar"> 
+ 
+ <script>
+  (function() {
+    var cx = '015547456235743402690:lcvntcoeazy';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+  
+</div>
+
+    
+    
+
+    
+    <div class="query-submit">
+        
+        <h2>Submit your query here and our experts will try their best to answer it.</h2><br>
+        
+        <input type="text" name="query" id="query" placeholder="Enter query here">
+        
+        <br> <br><br>
+        
+         <select name="category" id="category">
+    <option value="0" selected>Select a category</option>
+    <option value="cooking" id="cooking">Cooking</option>
+    <option value="finance" id="finance">Finance</option>
+    <option value="finance" id="finance">Technology</option>
+    <option value="finance" id="finance">Education</option>
+         </select>
+        <br> <br> <br> <br><br><br>
+        
+       <input type="submit" name="submit" id="submit">
+         
+        
+    </div>
+    
+    
+    <div class="footer"><!--FOOTER code -->
+  <p> Follow us on Facebook , Twitter , Instagram.<br><br>For other enquiries contact us here. All rights reserved.</p>
+</div>
+    
+    
+    
+</body>
+</html>
